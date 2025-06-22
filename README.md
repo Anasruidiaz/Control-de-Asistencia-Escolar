@@ -32,5 +32,5 @@ Tecnologías utilizadas:
 Comentarios finales: 
 
 - Este proyecto nos permitió poner en práctica nuestros conocimientos en programación estructurada y aprender a organizarnos como equipo.
-- Nos sentimos orgullosas del resultado y del camino recorrido. 
+- Nos sentimos orgullosas del resultado y del camino recorrido. :)
 
