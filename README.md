@@ -5,9 +5,9 @@ Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
 
 Integrantes del equipo: 	
 
-- Silvia Anabella Ruidiaz,	38.120.897	(Programadora)
+- Silvia Anabella Ruidiaz,	38.120.897. Rol: Programadora
 
-- Andrea Soledad Fernández,	33.119.874	(Programadora)
+- Andrea Soledad Fernández,	33.119.874. Rol. Programadora
 
 Ambas participamos activamente en el desarrollo del código y la organización del proyecto. 
 
