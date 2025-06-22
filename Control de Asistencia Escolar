@@ -156,3 +156,60 @@ void guardarArchivo() {
 	printf("Datos guardados en archivo.\n");
 }
 
+// Cargar datos desde archivos
+void cargarArchivo() {
+	FILE *f = fopen("asistencias.txt", "r");
+	if (f) {
+		int dni, pres, aus;
+		char nombre[30], apellido[30];
+		while (fscanf(f, "%d %s %s %d %d", &dni, nombre, apellido, &pres, &aus) != EOF) {
+			Alumno* nuevo = crearAlumno(dni, nombre, apellido);
+			nuevo->presentes = pres;
+			nuevo->ausentes = aus;
+			nuevo->sig = lista;
+			lista = nuevo;
+		}
+		fclose(f);
+	}
+	
+	FILE *fa = fopen("detalle_asistencias.txt", "r");
+	if (fa) {
+		int dni;
+		char fecha[11], estado;
+		while (fscanf(fa, "%d %s %c", &dni, fecha, &estado) != EOF) {
+			AsistenciaDia* nuevo = (AsistenciaDia*)malloc(sizeof(AsistenciaDia));
+			nuevo->dni = dni;
+			strcpy(nuevo->fecha, fecha);
+			nuevo->estado = estado;
+			nuevo->sig = asistencias;
+			asistencias = nuevo;
+		}
+		fclose(fa);
+	}
+}
+
+// Menú principal
+void menu() {
+	int op;
+	do {
+		printf("\n1. Agregar Alumno\n2. Registrar Asistencia\n3. Editar Asistencia\n4. Ver Historial\n5. Mostrar Inasistencias\n6. Guardar Archivo\n7. Salir\nOpcion: ");
+		scanf("%d", &op);
+		switch (op) {
+		case 1: agregarAlumno(); break;
+		case 2: registrarAsistenciaPorFecha(); break;
+		case 3: editarAsistenciaPorFecha(); break;
+		case 4: verHistorial(); break;
+		case 5: mostrarInasistencias(); break;
+		case 6: guardarArchivo(); break;
+		case 7: printf("Saliendo...\n"); break;
+		default: printf("Opcion invalida.\n");
+		}
+	} while (op != 7);
+}
+
+int main() {
+	cargarArchivo();
+	menu();
+	guardarArchivo();
+	return 0;
+}
