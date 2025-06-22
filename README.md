@@ -4,10 +4,8 @@ Este proyecto fue realizado con dedicación y trabajo en equipo. Se trata de un 
 Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
 
 Integrantes del equipo: 	
-
-Silvia Anabella Ruidiaz,	38.120.897	(Programadora)
-
-Andrea Soledad Fernández,	33.119.874	(Programadora)
+-Silvia Anabella Ruidiaz,	38.120.897	(Programadora)
+-Andrea Soledad Fernández,	33.119.874	(Programadora)
 
 Ambas participamos activamente en el desarrollo del código y la organización del proyecto. 
 
@@ -30,6 +28,6 @@ Tecnologías utilizadas:
 - Documentación: README.md
 
 Comentarios finales: 
-Este proyecto nos permitió poner en práctica nuestros conocimientos en programación estructurada y aprender a organizarnos como equipo.
-Nos sentimos orgullosas del resultado y del camino recorrido. 
+-Este proyecto nos permitió poner en práctica nuestros conocimientos en programación estructurada y aprender a organizarnos como equipo.
+-Nos sentimos orgullosas del resultado y del camino recorrido. 
 
