@@ -156,6 +156,38 @@ void guardarArchivo() {
 	printf("Datos guardados en archivo.\n");
 }
 
+// Cargar datos desde archivos
+void cargarArchivo() {
+	FILE *f = fopen("asistencias.txt", "r");
+	if (f) {
+		int dni, pres, aus;
+		char nombre[30], apellido[30];
+		while (fscanf(f, "%d %s %s %d %d", &dni, nombre, apellido, &pres, &aus) != EOF) {
+			Alumno* nuevo = crearAlumno(dni, nombre, apellido);
+			nuevo->presentes = pres;
+			nuevo->ausentes = aus;
+			nuevo->sig = lista;
+			lista = nuevo;
+		}
+		fclose(f);
+	}
+	
+	FILE *fa = fopen("detalle_asistencias.txt", "r");
+	if (fa) {
+		int dni;
+		char fecha[11], estado;
+		while (fscanf(fa, "%d %s %c", &dni, fecha, &estado) != EOF) {
+			AsistenciaDia* nuevo = (AsistenciaDia*)malloc(sizeof(AsistenciaDia));
+			nuevo->dni = dni;
+			strcpy(nuevo->fecha, fecha);
+			nuevo->estado = estado;
+			nuevo->sig = asistencias;
+			asistencias = nuevo;
+		}
+		fclose(fa);
+	}
+}
+
 
 
 
