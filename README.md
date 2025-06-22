@@ -41,16 +41,16 @@ Tecnologías utilizadas:
 
 Instrucciones para compilar y ejecutar en Windows:
 
-Compilación y ejecución en entorno Windows
+- Compilación y ejecución en entorno Windows
 
-Para compilar y ejecutar este programa se utilizó el entorno de desarrollo ZinjaI, una herramienta ligera y multiplataforma pensada especialmente para C y C++.
+- Para compilar y ejecutar este programa se utilizó el entorno de desarrollo ZinjaI, una herramienta ligera y multiplataforma pensada especialmente para C y C++.
 
-El compilador puede descargarse desde el sitio oficial:
+- El compilador puede descargarse desde el sitio oficial:
 
 https://zinjai.sourceforge.net/
 Está disponible para Windows, Linux y Mac OS.
 
-Una vez instalado, simplemente abrí el archivo del proyecto (Control de Asistencia Escolar.c) desde ZinjaI y utilizá las opciones del menú para compilar (F9) y ejecutar (F10) el programa.
+- Una vez instalado, simplemente abrí el archivo del proyecto (Control de Asistencia Escolar.c) desde ZinjaI y utilizá las opciones del menú para compilar (F9) y ejecutar (F10) el programa.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
