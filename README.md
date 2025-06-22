@@ -1,4 +1,4 @@
-C O N T R O L -D E -A S I S T E N C I A -E S C O L A R
+ C O N T R O L - D E - A S I S T E N C I A - E S C O L A R
 
 Este proyecto fue realizado con dedicación y trabajo en equipo. Se trata de un sistema para gestionar de forma simple y eficiente la asistencia escolar de los alumnos.
 Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
