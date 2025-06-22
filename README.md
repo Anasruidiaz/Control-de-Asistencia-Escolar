@@ -25,11 +25,12 @@ Funcionalidades principales:
 Tecnologías utilizadas:
 
 - Lenguaje de programación: C
-- Entorno de desarrollo: Zinjai (primera versión) y Visual Studio Code (ajustes y mejoras)
-- Control de versiones: Git y GitHub.
+- Entorno de desarrollo: Zinjai (utilizado para el desarrollo inicial y pruebas rápidas) y Visual Studio Code (usado para organizar mejor el proyecto, refactorizar el código y trabajar con control de versiones)
+- Control de versiones: GitHub.
 - Documentación: README.md
 
 Comentarios finales: 
+
 -Este proyecto nos permitió poner en práctica nuestros conocimientos en programación estructurada y aprender a organizarnos como equipo.
 -Nos sentimos orgullosas del resultado y del camino recorrido. 
 
