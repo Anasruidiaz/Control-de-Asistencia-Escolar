@@ -187,6 +187,31 @@ void cargarArchivo() {
 		fclose(fa);
 	}
 }
+// Menú principal
+void menu() {
+	int op;
+	do {
+		printf("\n1. Agregar Alumno\n2. Registrar Asistencia\n3. Editar Asistencia\n4. Ver Historial\n5. Mostrar Inasistencias\n6. Guardar Archivo\n7. Salir\nOpcion: ");
+		scanf("%d", &op);
+		switch (op) {
+		case 1: agregarAlumno(); break;
+		case 2: registrarAsistenciaPorFecha(); break;
+		case 3: editarAsistenciaPorFecha(); break;
+		case 4: verHistorial(); break;
+		case 5: mostrarInasistencias(); break;
+		case 6: guardarArchivo(); break;
+		case 7: printf("Saliendo...\n"); break;
+		default: printf("Opcion invalida.\n");
+		}
+	} while (op != 7);
+}
+
+int main() {
+	cargarArchivo();
+	menu();
+	guardarArchivo();
+	return 0;
+}
 
 
 
