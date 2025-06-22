@@ -2,8 +2,8 @@
 
 Este proyecto fue realizado con dedicación y trabajo en equipo. Se trata de un sistema para gestionar de forma simple y eficiente la asistencia escolar de los alumnos.
 Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
-
---- 𝐈𝐧𝐭𝐞𝐠𝐫𝐚𝐧𝐭𝐞𝐬 𝐝𝐞𝐥 𝐞𝐪𝐮𝐢𝐩𝐨 --- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 𝐈𝐧𝐭𝐞𝐠𝐫𝐚𝐧𝐭𝐞𝐬 𝐝𝐞𝐥 𝐞𝐪𝐮𝐢𝐩𝐨 
 
 - 𝐒𝐢𝐥𝐯𝐢𝐚 𝐀𝐧𝐚𝐛𝐞𝐥𝐥𝐚 𝐑𝐮𝐢𝐝𝐢𝐚𝐳,	38.120.897. Rol: Programadora
 
