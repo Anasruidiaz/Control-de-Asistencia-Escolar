@@ -4,7 +4,9 @@ Este proyecto fue realizado con dedicación y trabajo en equipo. Se trata de un 
 Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
 
 Integrantes del equipo: 	
+
 Silvia Anabella Ruidiaz,	38.120.897	(Programadora)
+
 Andrea Soledad Fernández,	33.119.874	(Programadora)
 
 Ambas participamos activamente en el desarrollo del código y la organización del proyecto. 
