@@ -85,6 +85,76 @@ void registrarAsistenciaPorFecha() {
 	
 	printf("Asistencia registrada.\n");
 }
+// Editar asistencia existente
+void editarAsistenciaPorFecha() {
+	int dni;
+	char fecha[11];
+	printf("DNI del alumno: "); scanf("%d", &dni);
+	printf("Fecha a editar (YYYY-MM-DD): "); scanf("%s", fecha);
+	
+	AsistenciaDia* aux = asistencias;
+	while (aux) {
+		if (aux->dni == dni && strcmp(aux->fecha, fecha) == 0) {
+			printf("Asistencia actual: %c\n", aux->estado);
+			printf("Nuevo estado (P/A): ");
+			scanf(" %c", &aux->estado);
+			printf("Asistencia actualizada.\n");
+			return;
+		}
+		aux = aux->sig;
+	}
+	printf("No se encontró asistencia para ese día.\n");
+}
+
+// Ver historial de un alumno
+void verHistorial() {
+	int dni;
+	printf("DNI del alumno: "); scanf("%d", &dni);
+	Alumno* alumno = buscarAlumno(dni);
+	if (alumno) {
+		printf("Alumno: %s %s\nPresentes: %d\nAusentes: %d\n",
+			   alumno->nombre, alumno->apellido, alumno->presentes, alumno->ausentes);
+		printf("Detalle por fecha:\n");
+		AsistenciaDia* aux = asistencias;
+		while (aux) {
+			if (aux->dni == dni) {
+				printf("%s - %c\n", aux->fecha, aux->estado);
+			}
+			aux = aux->sig;
+		}
+	} else printf("Alumno no encontrado.\n");
+}
+
+// Mostrar alumnos con más inasistencias
+void mostrarInasistencias() {
+	Alumno* aux = lista;
+	printf("Alumnos con más inasistencias:\n");
+	while (aux) {
+		if (aux->ausentes > aux->presentes)
+			printf("%s %s - Inasistencias: %d\n", aux->nombre, aux->apellido, aux->ausentes);
+		aux = aux->sig;
+	}
+}
+
+// Guardar datos en archivos
+void guardarArchivo() {
+	FILE *f = fopen("asistencias.txt", "w");
+	Alumno* aux = lista;
+	while (aux) {
+		fprintf(f, "%d %s %s %d %d\n", aux->dni, aux->nombre, aux->apellido, aux->presentes, aux->ausentes);
+		aux = aux->sig;
+	}
+	fclose(f);
+	
+	FILE *fa = fopen("detalle_asistencias.txt", "w");
+	AsistenciaDia* ad = asistencias;
+	while (ad) {
+		fprintf(fa, "%d %s %c\n", ad->dni, ad->fecha, ad->estado);
+		ad = ad->sig;
+	}
+	fclose(fa);
+	printf("Datos guardados en archivo.\n");
+}
 
 
 
