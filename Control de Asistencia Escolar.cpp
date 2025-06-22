@@ -56,4 +56,36 @@ Alumno* buscarAlumno(int dni) {
 	return NULL;
 }
 
+// Registrar asistencia por fecha
+void registrarAsistenciaPorFecha() {
+	int dni;
+	char fecha[11], estado;
+	printf("DNI del alumno: "); scanf("%d", &dni);
+	Alumno* alumno = buscarAlumno(dni);
+	if (!alumno) {
+		printf("Alumno no encontrado.\n");
+		return;
+	}
+	printf("Fecha (YYYY-MM-DD): "); scanf("%s", fecha);
+	printf("Estado (P = Presente, A = Ausente): "); scanf(" %c", &estado);
+	
+	if (estado == 'P' || estado == 'p') alumno->presentes++;
+	else if (estado == 'A' || estado == 'a') alumno->ausentes++;
+	else {
+		printf("Estado invalido.\n");
+		return;
+	}
+	
+	AsistenciaDia* nueva = (AsistenciaDia*)malloc(sizeof(AsistenciaDia));
+	nueva->dni = dni;
+	strcpy(nueva->fecha, fecha);
+	nueva->estado = estado;
+	nueva->sig = asistencias;
+	asistencias = nueva;
+	
+	printf("Asistencia registrada.\n");
+}
+
+
+
 
