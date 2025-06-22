@@ -1,4 +1,4 @@
-CONTROL DE ASISTENCIA ESCOLAR 
+🎓 𝐂 𝐎 𝐍 𝐓 𝐑 𝐎 𝐋   𝐃 𝐄   𝐀 𝐒 𝐈 𝐒 𝐓 𝐄 𝐍 𝐂 𝐈 𝐀   𝐄 𝐒 𝐂 𝐎 𝐋 𝐀 𝐑  
 
 Este proyecto fue realizado con dedicación y trabajo en equipo. Se trata de un sistema para gestionar de forma simple y eficiente la asistencia escolar de los alumnos.
 Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
@@ -7,7 +7,7 @@ Integrantes del equipo:
 
 - Silvia Anabella Ruidiaz,	38.120.897. Rol: Programadora
 
-- Andrea Soledad Fernández,	33.119.874. Rol. Programadora
+- Andrea Soledad Fernández,	33.119.874. Rol: Programadora
 
 Ambas participamos activamente en el desarrollo del código y la organización del proyecto. 
 
