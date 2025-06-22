@@ -13,9 +13,13 @@ Nos enfocamos en lograr una solución funcional, clara y fácil de usar :)
 
 Ambas participamos activamente en el desarrollo del código y la organización del proyecto. 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Descripción del proyecto:
 
 Este sistema permite registrar alumnos, marcar su asistencia por fecha, editar registros y consultar el historial completo de asistencias de cada estudiante.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Funcionalidades principales:
 
@@ -23,6 +27,8 @@ Funcionalidades principales:
 - Registro diario de asistencias (presente/ausente)
 - Edición de asistencias
 - Consulta del historial por alumno
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Tecnologías utilizadas:
 
@@ -31,8 +37,9 @@ Tecnologías utilizadas:
 - Control de versiones: GitHub.
 - Documentación: README.md
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Instrucciones para compilar y ejecutar en Windows
+Instrucciones para compilar y ejecutar en Windows:
 
 Compilación y ejecución en entorno Windows
 
@@ -45,8 +52,7 @@ Está disponible para Windows, Linux y Mac OS.
 
 Una vez instalado, simplemente abrí el archivo del proyecto (Control de Asistencia Escolar.c) desde ZinjaI y utilizá las opciones del menú para compilar (F9) y ejecutar (F10) el programa.
 
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Comentarios finales: 
 
